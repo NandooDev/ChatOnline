@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Conversua</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="main.js" defer></script>
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="usuario">
+            
+            <h1>Digite seu nome de Usuário</h1>
+    
+            <input type="text" id="user" placeholder="Max 20 caracteres" maxlength="20">
+    
+            <input type="button" id="btnuser" value="Entrar no Chat" onclick="entrar()">
+
+        </div>
+
+        <div id="chat">
+            
+            <h1>CHAT</h1>
+
+            <div id="conversa">
+
+                <div id="msgs">
+                </div>
+                
+            </div>
+
+            <div id="enbu">
+
+                <input type="text" id="men" placeholder="Escreva sua mensagem">
+                 
+                <input type="button" id="btnmen" value="Enviar" onclick="enviar()">
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

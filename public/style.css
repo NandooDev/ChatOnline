@@ -8,3 +8,115 @@ body {
     background-image: url(img/bg.jpg);
     background-size: cover;
 }
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#usuario {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(2, 2, 2, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+    padding: 40px;
+}
+
+#usuario h1 {
+    color: white;
+}
+
+#usuario input {
+    border: 0;
+    outline: 0;
+    padding: 5px;
+}
+
+#usuario input:focus {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#usuario #btnuser {
+    padding: 8px;
+    background-color: rgb(2, 186, 2);
+    color: white;
+    height: 40px;
+    cursor: pointer;
+}
+
+#usuario #btnuser:hover {
+    background-color: rgb(1, 97, 1);
+}
+
+#chat {
+    height: 500px;
+    width: 400px;
+    background-color: rgba(2, 2, 2, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+#chat h1 {
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+#chat #conversa {
+    height: 100%;
+    padding: 10px;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+#chat #conversa h3 {
+    color: rgb(30, 255, 0);
+}
+
+#chat #conversa p {
+    color: rgb(251, 251, 251);
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+#chat #conversa .eum {
+    text-align: end;
+}
+
+#chat #conversa .p {
+    margin-right: 5px;
+}
+
+#chat #enbu {
+    padding: 10px;
+}
+
+#chat #enbu #men {
+    width: 80%;
+    padding: 5px;
+    border: 0;
+    outline: 0;
+}
+
+#chat #enbu #btnmen {
+    width: 18%;
+    padding: 5px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+#chat #enbu #btnmen:hover {
+    background-color: rgb(169, 170, 171);
+}
